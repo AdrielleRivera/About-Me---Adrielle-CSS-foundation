@@ -141,8 +141,68 @@ footer span a:hover {
 }
 
 /* Media query to hide the image on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    header .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navbar .menu-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    p {
+        width: 80%; /* Increase width for smaller screens */
+        padding: 20px; /* Adjust padding */
+        font-size: 18px; /* Adjust font size */
+    }
+
     .profile-picture {
-        display: none; /* Hides the image on smaller screens */
+        display: none; /* Ensures the picture is hidden on smaller devices */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .navbar .logo {
+        font-size: 1.8rem; /* Adjust logo size */
+    }
+
+    .navbar .menu-links {
+        font-size: 18px; /* Adjust menu link size */
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    p {
+        font-size: 16px; /* Adjust paragraph font size */
+        line-height: 1.4; /* Adjust line height */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 1.5rem; /* Further reduce logo size */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    p {
+        font-size: 14px; /* Adjust font size */
+        padding: 15px; /* Adjust padding for mobile view */
     }
 }
