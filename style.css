@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("../image/blue beehive.jpg");
+    background-image: url("/image/blue beehive.jpg");
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
 }
